@@ -770,8 +770,7 @@ Typen: Thunderbolt 2 Mini DisplayPort-Stecker, Thunderbolt 3  USB Type-C-Stecker
 )";
     }
     void showkabel5() 
-    {
-      cout <<  R"(
+    { cout <<  R"(
 Verbindung von Peripheriegeräten:
 VGA-Kabel:
 Anwendung: Uebertragung von Video zwischen Computern und Monitoren (veraltet).
@@ -782,20 +781,18 @@ Anwendung: Verbindung von Tastaturen und Mäusen mit älteren Computern.
 )";
     }
     void showkabel6()
-    {
-        cout << R"(
+    { cout << R"(
 14  Frontpanel-Kabel:
 
     Funktion: Verbindet die Tasten, LEDs und Audioanschluesse an der Vorderseite des Gehaeuses mit dem Motherboard.
 
     Spezifikationen:
-    - Header-Typen: Die Art der Anschlüsse am Motherboard, z.B. USB-Header, Audio-Header.
+    - Header-Typen: Die Art der Anschluesse am Motherboard, z.B. USB-Header, Audio-Header.
 )";
 
     }
     void showkabeli()
-    {
-        cout << R"(   
+    { cout << R"(   
 Es gibt eine Vielzahl von Kabeln, die in der Computer- und Netzwerktechnologie verwendet werden, 
 und sie dienen verschiedenen Zwecken. Hier ist eine Liste der häufig verwendeten Kabel, 
 unterteilt nach verschiedenen Anwendungsbereichen:
@@ -855,8 +852,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
         }
     }
     void showhwinfo1()
-    {
-        cout << R"(
+    { cout << R"(
 1  Zentrale Verarbeitungseinheit (CPU):
 
    Funktion: Fuehrt Anweisungen aus und ist das "Gehirn" des Computers.
@@ -874,8 +870,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
 )";
     }
     void showhwinfo2()
-    {
-        cout << R"(
+    { cout << R"(
 2  Arbeitsspeicher (RAM):
 
    Funktion: Speichert temporäre Daten und ermöglicht schnellen Zugriff für laufende Programme.
@@ -891,8 +886,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
 )";
     }
     void showhwinfo3()
-    {
-        cout << R"(
+    { cout << R"(
 3  Netzteil:
 
    Funktion: Versorgt den Computer mit elektrischer Energie.
@@ -906,8 +900,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
 )";
     }
     void showhwinfo4()
-    {
-        cout << R"(
+    { cout << R"(
 4  Festplatte oder Solid State Drive (HDD/SSD):
 
    Funktion: Speichert dauerhafte Daten wie das Betriebssystem, Anwendungen und Dateien.
@@ -922,8 +915,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
 )";
     }
     void showhwinfo5()
-    {
-        cout << R"(
+    { cout << R"(
 5  Grafikkarte (GPU):
 
    Funktion: Verarbeitet grafische Daten und ist verantwortlich für die Anzeige von Bildern auf dem Bildschirm.
@@ -936,8 +928,7 @@ unterteilt nach verschiedenen Anwendungsbereichen:
 )";
     }
 	void showmainboard1()
-	{
-		cout << R"(
+	{ cout << R"(
 CPU-Sockel:
 
 Der CPU-Sockel ist der physische Steckplatz auf dem Motherboard, in den die Zentrale Verarbeitungseinheit (CPU) eingesteckt wird.
@@ -946,8 +937,7 @@ Es ermöglicht den Datenaustausch zwischen der CPU und anderen Komponenten auf de
 )";
 	}
 	void showmainboard2()
-	{
-		cout << R"(
+	{ cout << R"(
 RAM-Steckplätze:
 
 Die RAM-Steckplätze sind die Anschlüsse, in die die Arbeitsspeichermodule (RAM) eingesteckt werden.
@@ -956,8 +946,7 @@ Die Anzahl und der Typ der RAM-Steckplaetze variieren je nach Motherboard und be
 )";
 	}
 	void showmainboard3()
-	{
-		cout << R"(
+	{ cout << R"(
 PCIe-Steckplaetze:
 
 PCIe (Peripheral Component Interconnect Express) -Steckplätze sind für die Verbindung von Erweiterungskarten wie Grafikkarten, SSDs, Soundkarten und Netzwerkkarten verantwortlich.
@@ -966,11 +955,10 @@ Die Anzahl und Art der PCIe-Steckplätze variieren je nach Motherboard-Modell.
 )";
 	}
 	void showmainboard4()
-	{
-		cout << R"(
+	{ cout << R"(
 Anschluesse:
 
-Das Motherboard verfügt über verschiedene Anschlüsse, darunter USB, HDMI, Audioanschlüsse, LAN-Ports und weitere.
+Das Motherboard verfügt über verschiedene Anschluesse, darunter USB, HDMI, Audioanschlüsse, LAN-Ports und weitere.
 USB-Anschluesse ermoeglichen den Anschluss von Peripheriegeräten wie Tastaturen, Mäusen und Druckern.
 HDMI-Anschlüsse dienen zur Verbindung mit Bildschirmen und anderen Anzeigegeräten.
 Audioanschlüsse unterstützen den Anschluss von Lautsprechern, Kopfhoerern und Mikrofonen.
@@ -978,8 +966,7 @@ LAN-Ports ermoeglichen die Verbindung mit einem Netzwerk für Internetzugang oder
 )";
 	}
 	void showmainboard5()
-	{
-		cout << R"(
+	{ cout << R"(
 BIOS/UEFI:
 
 Das Basic Input/Output System (BIOS) oder das Unified Extensible Firmware Interface (UEFI) ist auf dem Motherboard eingebettet und ermöglicht grundlegende Systeminitialisierung und -konfiguration.
@@ -1510,9 +1497,29 @@ Dies ermoeglicht es den angeschlossenen Geräten, nahtlos und ohne Unterbrechung 
             }
         }
     }
+    void showNetzplan() {
+        cout << R"(
+
+
+   FAZ___________FEZ
+      |  Vorgang |
+      ------------
+      | D | GP|FP|
+   SAZ-----------SEZ
+
+
+D = Dauer des jeweiligen Vorgangs
+FAZ = Fruehester Anfangszeitpunkt, zu dem der Prozessschritt begonnen werden kann
+FEZ = Fruehester Endzeitpunkt, zu dem der Prozessschritt abgeschlossen werden kann
+SAZ = Spätester Anfangszeitpunkt, um den Gesamtprozess planmäßig beenden zu koennen
+SEZ = Spätester Endzeitpunkt, zu dem ein Schritt abgeschlossen sein muss, um den geplanten Abschlusstermin nicht zu gefährden
+GP = Gesamtpuffer, der genutzt werden kann, bevor der pünktliche Abschluss des Gesamtprozesses gefährdet wird
+FP = Freier Puffer, der zur Verfügung steht, bevor der unmittelbar folgende Prozessschritt beeinflusst wird
+
+)";
+    }
     void showpcwikitwo()
-    {
-        cout << R"(   
+    {   cout << R"(   
 Zweite Seite:
 )";
         int choice;
@@ -1530,7 +1537,7 @@ Zweite Seite:
                                                   |  | ' 2.                   |                              |  |     
                                                   |  | ' 3.                   |                              |  |     
                                                   |  | ' 4. USV               |                              |  |     
-                                                  |  | ' 5.                   |                              |  |    
+                                                  |  | ' 5. Netzplan          |                              |  |    
                                                   |  | ' 6.                   |                              |  |     
                                                   |  | ' 7. Active Directory  |                              |  |     
                                                   |  | ' 8.                   |                              |  |     
@@ -1583,7 +1590,7 @@ Zweite Seite:
             case 5:
                 animateTransition();
                 clearScreen();
-             
+                showNetzplan();
                 break;
             case 6:
                 animateTransition();
