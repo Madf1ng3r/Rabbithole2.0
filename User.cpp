@@ -144,12 +144,12 @@ string enterName() {
     cout << "Wilkommen ";
     this_thread::sleep_for(chrono::milliseconds(500)); 
  
-    string welcomeMessage = "im Rabbithole! Das Programm befindet sich noch im Aufbau. Bevor Du loslegst erzähl mir etwas über Dich. Wie lautet dein Name?";
+    string welcomeMessage = "im Rabbithole! Das Programm befindet sich noch im Aufbau. Bevor Du loslegst erzähl mir etwas ueber Dich.";
     for (char c : welcomeMessage) {
         cout << c;
         this_thread::sleep_for(chrono::milliseconds(100)); // Verzögerung von 100 Millisekunden pro Zeichen
     }
-    cout << "                                 Namen hier Eingeben: ";
+    cout << "                                Wie lautet dein Name?  ";
     getline(cin, name);
     return name;
 }
