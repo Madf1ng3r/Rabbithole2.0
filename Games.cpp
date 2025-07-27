@@ -26,14 +26,14 @@ void showGames()
                                                   |  | |4. Spaceinvaders       |        \_\/_/\      /_\_\/  |  |     
                                                   |  | |5. Schach              |         \_\/        \_\/    |  |     
                                                   |  | |                       |                             |  |     
-                                                  |  | |0. Zurück zum Hauptmenü|                             |  |     
-                                                  |  | @---------------------                                |  |     
+                                                  |  | |0. Hauptmenü           |                             |  |     
+                                                  |  | @-----------------------                              |  |     
                                                   |  |-------------------------------------------------------|  |
                                                   |__________________________________________________________|  /      
                                                     (__________________________________________________________/        
-                                             _______/                [___________]    
+                                            ________/                  [___________]    
                                            /  
-                                          (_________________________________________________________________      
+                                          (__________________________________________________________________     
                                           / #  #   #   #   #   #   #   #   #   #   #   #   #   #   #   #  #  / __  
                                          /  #  #   #   #   #   #   #   #   #   #   #   #   #   #   #   #  # / (  )  
                                         /   #  #   #   #   #   #   #   #   #   #   #   #   #   #   #   #   /  (__)  
@@ -47,7 +47,7 @@ int gamemain() {
     while (running)
     {
         showGames();
-        cout << "Wählen Sie eine Option: ";
+        cout << "Waehlen Sie eine Option: ";
         if (!(cin >> choice))
         {
             cin.clear(); 
@@ -87,7 +87,7 @@ int gamemain() {
             running = false;
             break;
         default:
-            cout << "Ungültige Auswahl. Bitte versuchen Sie es erneut." << endl;
+            cout << "Ungueltige Auswahl. Bitte versuchen Sie es erneut." << endl;
             this_thread::sleep_for(chrono::seconds(2));
             break;
         }

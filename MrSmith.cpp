@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <map>
+#include "Treadmill.h"
 #include "Mainframe.h"
 using namespace std;
 const int WIDTH = 235;
@@ -41,12 +42,7 @@ void waitForEnter() {
     cin.ignore();
     cin.get();
 }
-void setCursorPosition(int x, int y) { // Zeichne Cursor
-    COORD coord;
-    coord.X = x;
-    coord.Y = y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
+void setCursorPosition(int x, int y);
 void hideCursor() { // verstecke Cursor
     CONSOLE_CURSOR_INFO cursorInfo;
     cursorInfo.dwSize = 100;

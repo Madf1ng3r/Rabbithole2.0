@@ -72,7 +72,7 @@ void printMenu()
     cout << "| | . | 0 | = | | / | |" << endl;
     cout << "|_|___|___|___|_|___|_|" << endl;
     cout << "\033[0m"; //Zurücksetzen der Textfarbe
-    cout << "                                           ---------------------------------------------------------" << endl;
+    cout << "                                           +--------------------------------------------------------+" << endl;
     cout << "                                           |                Optionen:                               |" << endl;
     cout << "                                           |  1. Addition             |  11. Umfang eines Kreises   |" << endl;
     cout << "                                           |  2. Subtraktion          |  12. Binaerrechner          |" << endl;
@@ -83,9 +83,9 @@ void printMenu()
     cout << "                                           |  7. Fakultaet            |                             |" << endl;
     cout << "                                           |  8. Zahl Pi              |                             |" << endl;
     cout << "                                           |  9. Volumen eines Kreises|                             |" << endl;
-    cout << "                                           |  10. Fläche eines Kreises|                             |" << endl;
+    cout << "                                           |  10.Fläche eines Kreises |                             |" << endl;
     cout << "                                           |  0. zurueck zum Menue    |                             |" << endl;
-    cout << "                                            --------------------------------------------------------" << endl;
+    cout << "                                           +--------------------------------------------------------+" << endl;
 }
 void changeConsoleColor(int colorCode)
 {
